@@ -1,0 +1,38 @@
+{
+  "checkpoint": "weights/pretrained/meox_s_mmearth64_best.pth",
+  "preprocessing_signature": "v2_eurosat_physical_band_order_m-eurosat",
+  "embedding": "pre_norm__mean_fine",
+  "selected_strategy": "mmearth_pretrain",
+  "mmearth_stats_path": "${MMEARTH64_ROOT}/_band_stats.json",
+  "mmearth_s2_stats_key": "sentinel2_l1c",
+  "selection_metric": "validation_average_accuracy",
+  "tie_tolerance": 0.005,
+  "probe_epochs": 50,
+  "probe_learning_rate": 0.05,
+  "probe_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "split_sizes": {
+    "train": 2000,
+    "valid": 1000,
+    "test": 1000
+  },
+  "test_aggregate": {
+    "test_average_accuracy": {
+      "mean": 0.8912000000000001,
+      "std": 0.003271085446759223
+    },
+    "test_overall_accuracy": {
+      "mean": 0.8912000000000001,
+      "std": 0.003271085446759228
+    },
+    "test_macro_f1": {
+      "mean": 0.8911335614389999,
+      "std": 0.0036412142433722115
+    }
+  }
+}

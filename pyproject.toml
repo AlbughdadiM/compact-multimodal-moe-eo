@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meox-eo"
+version = "0.1.0"
+description = "Compact multimodal mixture-of-experts for Earth observation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Mohanad Albughdadi", email = "mohanad.albughdadi@ecmwf.int"},
+]
+dependencies = [
+  "numpy==2.2.4",
+  "torch==2.7.0",
+  "torchvision==0.22.0",
+  "scikit-learn==1.6.1",
+  "pandas==2.2.3",
+  "pyarrow==19.0.1",
+  "rasterio==1.4.3",
+  "pyproj==3.7.1",
+  "tqdm==4.67.1",
+  "matplotlib==3.10.1",
+  "fvcore==0.1.5.post20221221",
+  "PyYAML==6.0.2",
+  "joblib==1.4.2",
+  "h5py==3.13.0",
+]
+
+[project.optional-dependencies]
+geobench = [
+  "scipy>=1.11.2",
+  "requests>=2.26.0",
+  "huggingface_hub>=0.19.3",
+]
+dev = ["pytest>=8", "ruff>=0.8"]
+
+[project.scripts]
+meox-pretrain = "pretrain_mae:main"
+meox-extract = "utils.extract_embeddings:main"
+meox-eval-classification = "evaluate_geobench_classification:main"
+meox-eval-segmentation = "evaluate_geobench_segmentation:main"
+
+[tool.setuptools]
+py-modules = [
+  "pretrain_mae",
+  "extract_embeddings",
+  "evaluate_bigearthnet_cbir",
+  "evaluate_geobench_classification",
+  "evaluate_geobench_segmentation",
+  "evaluate_mmearth_metadata",
+  "finetune_geobench_classification",
+  "finetune_geobench_segmentation",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["datasets*", "models*", "scheduler*", "utils*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+

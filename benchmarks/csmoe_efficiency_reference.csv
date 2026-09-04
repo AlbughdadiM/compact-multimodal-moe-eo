@@ -1,0 +1,61 @@
+dataset,task,metric,model,variant,flops_g,parameters_m,value,source_type,source
+m-bigearthnet,classification,micro_mAP,CSMAE,,5.64,87,36.7,vector_digitized,CSMoE Figure 7a
+m-bigearthnet,classification,micro_mAP,DOFA,,17.47,111,62.0,vector_digitized,CSMoE Figure 7a
+m-bigearthnet,classification,micro_mAP,Prithvi V2-300,,59.85,304,64.8,vector_digitized,CSMoE Figure 7a
+m-bigearthnet,classification,micro_mAP,Prithvi V2-600,,162.18,631,66.2,vector_digitized,CSMoE Figure 7a
+m-bigearthnet,classification,micro_mAP,Satlas,,17.12,88,62.6,vector_digitized,CSMoE Figure 7a
+m-bigearthnet,classification,micro_mAP,TerraMind,,17.84,87,72.2,vector_digitized,CSMoE Figure 7a
+m-bigearthnet,classification,micro_mAP,CSMoE,patch32,2.92,277,62.6,table_exact,CSMoE Table IV
+m-bigearthnet,classification,micro_mAP,CSMoE,patch28,3.67,275,65.1,table_exact,CSMoE Table IV
+m-bigearthnet,classification,micro_mAP,CSMoE,patch16,10.11,271,66.5,table_exact,CSMoE Table IV
+m-bigearthnet,classification,micro_mAP,CSMoE,patch14,13.40,271,66.0,table_exact,CSMoE Table IV
+m-brick-kiln,classification,average_accuracy,CSMAE,,5.64,87,88.7,vector_digitized,CSMoE Figure 7b
+m-brick-kiln,classification,average_accuracy,DOFA,,17.47,111,94.4,vector_digitized,CSMoE Figure 7b
+m-brick-kiln,classification,average_accuracy,Prithvi V2-300,,59.85,304,95.0,vector_digitized,CSMoE Figure 7b
+m-brick-kiln,classification,average_accuracy,Prithvi V2-600,,162.18,631,95.3,vector_digitized,CSMoE Figure 7b
+m-brick-kiln,classification,average_accuracy,Satlas,,17.12,88,80.8,vector_digitized,CSMoE Figure 7b
+m-brick-kiln,classification,average_accuracy,TerraMind,,17.84,87,94.9,vector_digitized,CSMoE Figure 7b
+m-brick-kiln,classification,average_accuracy,CSMoE,patch32,2.92,277,93.2,table_exact,CSMoE Table IV
+m-brick-kiln,classification,average_accuracy,CSMoE,patch28,3.67,275,93.8,table_exact,CSMoE Table IV
+m-brick-kiln,classification,average_accuracy,CSMoE,patch16,10.11,271,94.3,table_exact,CSMoE Table IV
+m-brick-kiln,classification,average_accuracy,CSMoE,patch14,13.40,271,94.4,table_exact,CSMoE Table IV
+m-eurosat,classification,average_accuracy,CSMAE,,5.64,87,69.8,vector_digitized,CSMoE Figure 7c
+m-eurosat,classification,average_accuracy,DOFA,,17.47,111,93.9,vector_digitized,CSMoE Figure 7c
+m-eurosat,classification,average_accuracy,Prithvi V2-300,,59.85,304,92.2,vector_digitized,CSMoE Figure 7c
+m-eurosat,classification,average_accuracy,Prithvi V2-600,,162.18,631,93.3,vector_digitized,CSMoE Figure 7c
+m-eurosat,classification,average_accuracy,Satlas,,17.12,88,90.6,vector_digitized,CSMoE Figure 7c
+m-eurosat,classification,average_accuracy,TerraMind,,17.84,87,94.5,vector_digitized,CSMoE Figure 7c
+m-eurosat,classification,average_accuracy,CSMoE,patch32,2.92,277,84.9,table_exact,CSMoE Table IV
+m-eurosat,classification,average_accuracy,CSMoE,patch28,3.67,275,84.9,table_exact,CSMoE Table IV
+m-eurosat,classification,average_accuracy,CSMoE,patch16,10.11,271,86.2,table_exact,CSMoE Table IV
+m-eurosat,classification,average_accuracy,CSMoE,patch14,13.40,271,88.3,table_exact,CSMoE Table IV
+m-so2sat,classification,average_accuracy,CSMAE,,5.64,87,34.4,vector_digitized,CSMoE Figure 7d
+m-so2sat,classification,average_accuracy,DOFA,,17.47,111,57.4,vector_digitized,CSMoE Figure 7d
+m-so2sat,classification,average_accuracy,Prithvi V2-300,,59.85,304,54.6,vector_digitized,CSMoE Figure 7d
+m-so2sat,classification,average_accuracy,Prithvi V2-600,,162.18,631,55.5,vector_digitized,CSMoE Figure 7d
+m-so2sat,classification,average_accuracy,Satlas,,17.12,88,44.9,vector_digitized,CSMoE Figure 7d
+m-so2sat,classification,average_accuracy,TerraMind,,17.84,87,57.1,vector_digitized,CSMoE Figure 7d
+m-so2sat,classification,average_accuracy,CSMoE,patch32,2.92,277,44.1,table_exact,CSMoE Table IV
+m-so2sat,classification,average_accuracy,CSMoE,patch28,3.67,275,46.3,table_exact,CSMoE Table IV
+m-so2sat,classification,average_accuracy,CSMoE,patch16,10.11,271,48.0,table_exact,CSMoE Table IV
+m-so2sat,classification,average_accuracy,CSMoE,patch14,13.40,271,49.6,table_exact,CSMoE Table IV
+m-cashew-plant,segmentation,mean_iou,CSMAE,,5.64,87,47.9,vector_digitized,CSMoE Figure 8a
+m-cashew-plant,segmentation,mean_iou,DOFA,,17.47,111,56.3,vector_digitized,CSMoE Figure 8a
+m-cashew-plant,segmentation,mean_iou,Prithvi V2-300,,59.85,304,58.5,paper_text_exact,CSMoE Section IV-B
+m-cashew-plant,segmentation,mean_iou,Prithvi V2-600,,162.18,631,61.9,paper_text_exact,CSMoE Section IV-B
+m-cashew-plant,segmentation,mean_iou,Satlas,,17.12,88,41.5,vector_digitized,CSMoE Figure 8a
+m-cashew-plant,segmentation,mean_iou,TerraMind,,17.84,87,58.8,paper_text_exact,CSMoE Section IV-B
+m-cashew-plant,segmentation,mean_iou,CSMoE,patch32,2.92,277,46.0,table_exact,CSMoE Table IV
+m-cashew-plant,segmentation,mean_iou,CSMoE,patch28,3.67,275,48.3,table_exact,CSMoE Table IV
+m-cashew-plant,segmentation,mean_iou,CSMoE,patch16,10.11,271,55.7,table_exact,CSMoE Table IV
+m-cashew-plant,segmentation,mean_iou,CSMoE,patch14,13.40,271,59.4,table_exact,CSMoE Table IV
+m-SA-crop-type,segmentation,mean_iou,CSMAE,,5.64,87,35.9,vector_digitized,CSMoE Figure 8b
+m-SA-crop-type,segmentation,mean_iou,DOFA,,17.47,111,38.0,vector_digitized,CSMoE Figure 8b
+m-SA-crop-type,segmentation,mean_iou,Prithvi V2-300,,59.85,304,41.1,vector_digitized,CSMoE Figure 8b
+m-SA-crop-type,segmentation,mean_iou,Prithvi V2-600,,162.18,631,41.8,vector_digitized,CSMoE Figure 8b
+m-SA-crop-type,segmentation,mean_iou,Satlas,,17.12,88,32.2,vector_digitized,CSMoE Figure 8b
+m-SA-crop-type,segmentation,mean_iou,TerraMind,,17.84,87,42.8,vector_digitized,CSMoE Figure 8b
+m-SA-crop-type,segmentation,mean_iou,CSMoE,patch32,2.92,277,35.8,table_exact,CSMoE Table IV
+m-SA-crop-type,segmentation,mean_iou,CSMoE,patch28,3.67,275,36.7,table_exact,CSMoE Table IV
+m-SA-crop-type,segmentation,mean_iou,CSMoE,patch16,10.11,271,38.6,table_exact,CSMoE Table IV
+m-SA-crop-type,segmentation,mean_iou,CSMoE,patch14,13.40,271,39.8,table_exact,CSMoE Table IV

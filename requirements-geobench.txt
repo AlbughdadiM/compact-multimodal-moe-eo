@@ -1,0 +1,16 @@
+# Optional extras for evaluate_geobench_classification.py and
+# evaluate_geobench_segmentation.py in the same Python environment as the rest of this
+# repository.
+#
+# Install order:
+#   python -m pip install -r requirements.txt
+#   python -m pip install -r requirements-geobench.txt
+#   python -m pip install --no-deps geobench==1.0.0
+#
+# We intentionally do not install geobench through normal dependency resolution here.
+# Its published dependency metadata conflicts with the base environment, while the
+# evaluation path in this repo only needs geobench's dataset/task loader plus the
+# runtime packages below.
+scipy>=1.11.2
+requests>=2.26.0
+huggingface_hub>=0.19.3

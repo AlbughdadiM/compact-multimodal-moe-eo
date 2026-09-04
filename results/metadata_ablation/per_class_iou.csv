@@ -1,0 +1,111 @@
+experiment,metadata,class,iou_pct,gt_pixels
+matched,all,Tree cover,62.49693174056576,3238276
+matched,all,Shrubland,16.940482819232834,824627
+matched,all,Grassland,41.829047550214035,2620684
+matched,all,Cropland,27.522128654541067,1127351
+matched,all,Built-up,33.426886312792355,74816
+matched,all,Bare / sparse vegetation,51.561779978790845,1163209
+matched,all,Snow and ice,8.229712041884817,50287
+matched,all,Permanent water,57.327802343073344,318463
+matched,all,Herbaceous wetland,2.4071877690945422,283812
+matched,all,Mangroves,21.227239220828938,207221
+matched,all,Moss and lichen,12.022969709646137,253430
+matched,none,Tree cover,62.30198962244102,3238276
+matched,none,Shrubland,16.721559988752137,824627
+matched,none,Grassland,41.68256566019446,2620684
+matched,none,Cropland,26.825558708470776,1127351
+matched,none,Built-up,33.29689682395093,74816
+matched,none,Bare / sparse vegetation,51.673226099914245,1163209
+matched,none,Snow and ice,6.321419525930781,50287
+matched,none,Permanent water,56.54280044853736,318463
+matched,none,Herbaceous wetland,2.4667906958558827,283812
+matched,none,Mangroves,19.120667390903314,207221
+matched,none,Moss and lichen,11.001095620344007,253430
+matched,no_location,Tree cover,62.402607770090476,3238276
+matched,no_location,Shrubland,16.863395909250976,824627
+matched,no_location,Grassland,41.73299309020023,2620684
+matched,no_location,Cropland,27.329290290599435,1127351
+matched,no_location,Built-up,33.30200216286144,74816
+matched,no_location,Bare / sparse vegetation,51.773968851093436,1163209
+matched,no_location,Snow and ice,9.044785757114525,50287
+matched,no_location,Permanent water,56.80906437733806,318463
+matched,no_location,Herbaceous wetland,2.4149361411718826,283812
+matched,no_location,Mangroves,20.657317247432992,207221
+matched,no_location,Moss and lichen,11.33723720840933,253430
+matched,no_month,Tree cover,62.473437653874875,3238276
+matched,no_month,Shrubland,16.95728771774775,824627
+matched,no_month,Grassland,41.80254692380122,2620684
+matched,no_month,Cropland,27.448749542611555,1127351
+matched,no_month,Built-up,33.304907514568235,74816
+matched,no_month,Bare / sparse vegetation,51.50984637108015,1163209
+matched,no_month,Snow and ice,8.505262528405694,50287
+matched,no_month,Permanent water,57.43065634165897,318463
+matched,no_month,Herbaceous wetland,2.3970171030234253,283812
+matched,no_month,Mangroves,21.158258984067725,207221
+matched,no_month,Moss and lichen,11.966194004064073,253430
+matched,no_era5,Tree cover,62.46613988468466,3238276
+matched,no_era5,Shrubland,16.791210629567058,824627
+matched,no_era5,Grassland,41.67935007082663,2620684
+matched,no_era5,Cropland,27.142810374066144,1127351
+matched,no_era5,Built-up,33.42796885139519,74816
+matched,no_era5,Bare / sparse vegetation,51.5835463520718,1163209
+matched,no_era5,Snow and ice,7.168659155414122,50287
+matched,no_era5,Permanent water,56.752176296348445,318463
+matched,no_era5,Herbaceous wetland,2.526461445640911,283812
+matched,no_era5,Mangroves,20.250604654203165,207221
+matched,no_era5,Moss and lichen,11.992486725193535,253430
+test_time_removal,all,Tree cover,62.49693174056576,3238276
+test_time_removal,all,Shrubland,16.940482819232834,824627
+test_time_removal,all,Grassland,41.829047550214035,2620684
+test_time_removal,all,Cropland,27.522128654541067,1127351
+test_time_removal,all,Built-up,33.426886312792355,74816
+test_time_removal,all,Bare / sparse vegetation,51.561779978790845,1163209
+test_time_removal,all,Snow and ice,8.229712041884817,50287
+test_time_removal,all,Permanent water,57.327802343073344,318463
+test_time_removal,all,Herbaceous wetland,2.4071877690945422,283812
+test_time_removal,all,Mangroves,21.227239220828938,207221
+test_time_removal,all,Moss and lichen,12.022969709646137,253430
+test_time_removal,none,Tree cover,62.15463050217591,3238276
+test_time_removal,none,Shrubland,16.606048986057935,824627
+test_time_removal,none,Grassland,41.58211544753539,2620684
+test_time_removal,none,Cropland,26.987780332203755,1127351
+test_time_removal,none,Built-up,32.98578774749969,74816
+test_time_removal,none,Bare / sparse vegetation,51.22895584808458,1163209
+test_time_removal,none,Snow and ice,9.469964664310954,50287
+test_time_removal,none,Permanent water,56.97939538287869,318463
+test_time_removal,none,Herbaceous wetland,2.4140959525931263,283812
+test_time_removal,none,Mangroves,18.491161537921318,207221
+test_time_removal,none,Moss and lichen,8.132539146126673,253430
+test_time_removal,no_location,Tree cover,62.238913361368596,3238276
+test_time_removal,no_location,Shrubland,16.59290164350351,824627
+test_time_removal,no_location,Grassland,41.721225420371425,2620684
+test_time_removal,no_location,Cropland,27.16705626816945,1127351
+test_time_removal,no_location,Built-up,33.04006347484608,74816
+test_time_removal,no_location,Bare / sparse vegetation,51.535962786588094,1163209
+test_time_removal,no_location,Snow and ice,11.406299934694104,50287
+test_time_removal,no_location,Permanent water,57.76207254521931,318463
+test_time_removal,no_location,Herbaceous wetland,2.128409075944533,283812
+test_time_removal,no_location,Mangroves,19.719215518165257,207221
+test_time_removal,no_location,Moss and lichen,9.811862391528553,253430
+test_time_removal,no_month,Tree cover,62.47004802988526,3238276
+test_time_removal,no_month,Shrubland,16.955478409868448,824627
+test_time_removal,no_month,Grassland,41.80437241035815,2620684
+test_time_removal,no_month,Cropland,27.4095406562279,1127351
+test_time_removal,no_month,Built-up,33.279088689991866,74816
+test_time_removal,no_month,Bare / sparse vegetation,51.54297541085694,1163209
+test_time_removal,no_month,Snow and ice,8.275686139163579,50287
+test_time_removal,no_month,Permanent water,57.31056050036084,318463
+test_time_removal,no_month,Herbaceous wetland,2.288286415775731,283812
+test_time_removal,no_month,Mangroves,21.070427820355423,207221
+test_time_removal,no_month,Moss and lichen,11.993562714430988,253430
+test_time_removal,no_era5,Tree cover,62.469121862899065,3238276
+test_time_removal,no_era5,Shrubland,16.95437068238116,824627
+test_time_removal,no_era5,Grassland,41.65538435488075,2620684
+test_time_removal,no_era5,Cropland,27.399055611309358,1127351
+test_time_removal,no_era5,Built-up,33.41884709730172,74816
+test_time_removal,no_era5,Bare / sparse vegetation,51.348840709262,1163209
+test_time_removal,no_era5,Snow and ice,8.152800922958594,50287
+test_time_removal,no_era5,Permanent water,55.829078888171665,318463
+test_time_removal,no_era5,Herbaceous wetland,2.5104950064854985,283812
+test_time_removal,no_era5,Mangroves,20.646780287674122,207221
+test_time_removal,no_era5,Moss and lichen,11.145123929385182,253430

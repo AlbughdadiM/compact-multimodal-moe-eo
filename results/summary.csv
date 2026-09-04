@@ -1,0 +1,15 @@
+task,protocol,dataset,metric,mean,std
+classification,geobench_224,m-bigearthnet,micro_map,0.5722357909365067,0.0011161662789059897
+classification,geobench_224,m-brick-kiln,average_accuracy,0.9204077784960137,0.0023229239825162864
+classification,geobench_224,m-eurosat,average_accuracy,0.9056,0.0026532998322842853
+classification,geobench_224,m-so2sat,average_accuracy,0.4359026369168356,0.007627422181323789
+classification,model_input,m-bigearthnet,micro_map,0.5516065538326699,0.0015543088921880313
+classification,model_input,m-brick-kiln,average_accuracy,0.916001400560224,0.005358061901034752
+classification,model_input,m-eurosat,average_accuracy,0.897,0.0029664793948382603
+classification,model_input,m-so2sat,average_accuracy,0.4602434077079107,0.0032327337627807724
+segmentation,geobench_224,m-SA-crop-type,mean_iou,0.3232636127031493,0.0022552091743250047
+segmentation,geobench_224,m-cashew-plant,mean_iou,0.640829835928281,0.010683213543561967
+segmentation,model_input,m-SA-crop-type,mean_iou,0.27653627581175616,0.004702121898752631
+segmentation,model_input,m-cashew-plant,mean_iou,0.6441837628285386,0.00218684254269287
+finetuning,geobench_224,m-bigearthnet,micro_map,0.7294651166431638,0.0
+finetuning,model_input,m-bigearthnet,micro_map,0.6778385430703427,0.0

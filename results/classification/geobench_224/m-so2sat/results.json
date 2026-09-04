@@ -1,0 +1,131 @@
+{
+  "dataset": "m-so2sat",
+  "checkpoint": "weights/pretrained/meox_s_mmearth64_best.pth",
+  "token_source": "pre_norm",
+  "pooling": "mean_fine",
+  "input_normalization": "geobench_official_per_band_zscore",
+  "input_image_size": 224,
+  "spatial_protocol": "geobench_224",
+  "nodata_policy": "raw_zero_and_nonfinite_are_invalid",
+  "partition": "default",
+  "s1_modality": "sentinel1_asc",
+  "preprocessing_signature": "v3_zero_nodata_masked_resize_m-so2sat_input_224",
+  "source_bands": {
+    "sentinel2": [
+      "02 - Blue",
+      "03 - Green",
+      "04 - Red",
+      "05 - Vegetation Red Edge",
+      "06 - Vegetation Red Edge",
+      "07 - Vegetation Red Edge",
+      "08A - Vegetation Red Edge",
+      "08 - NIR",
+      "11 - SWIR",
+      "12 - SWIR"
+    ],
+    "sentinel1_asc": [
+      "06 - VV.LEE Filtered",
+      "05 - VH.LEE Filtered"
+    ]
+  },
+  "model_band_names": {
+    "sentinel2": [
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8A",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "sentinel1_asc": [
+      "VV",
+      "VH"
+    ]
+  },
+  "split_sizes": {
+    "train": 19992,
+    "valid": 986,
+    "test": 986
+  },
+  "probe_loss": "cross_entropy",
+  "linear_probe": {
+    "selection_metric": "average_accuracy",
+    "runs": [
+      {
+        "seed": 0,
+        "best_epoch": 49,
+        "best_val_score": 0.4472616632860041,
+        "test": {
+          "average_accuracy": 0.42900608519269773,
+          "overall_accuracy": 0.4290060851926978,
+          "macro_f1": 0.4259048560741744
+        }
+      },
+      {
+        "seed": 1,
+        "best_epoch": 45,
+        "best_val_score": 0.4411764705882353,
+        "test": {
+          "average_accuracy": 0.4249492900608519,
+          "overall_accuracy": 0.4249492900608519,
+          "macro_f1": 0.4240972232802657
+        }
+      },
+      {
+        "seed": 2,
+        "best_epoch": 46,
+        "best_val_score": 0.45537525354969566,
+        "test": {
+          "average_accuracy": 0.4401622718052738,
+          "overall_accuracy": 0.44016227180527384,
+          "macro_f1": 0.43541393693474467
+        }
+      },
+      {
+        "seed": 3,
+        "best_epoch": 45,
+        "best_val_score": 0.44929006085192696,
+        "test": {
+          "average_accuracy": 0.4452332657200811,
+          "overall_accuracy": 0.44523326572008115,
+          "macro_f1": 0.4411803409931641
+        }
+      },
+      {
+        "seed": 4,
+        "best_epoch": 43,
+        "best_val_score": 0.45233265720081134,
+        "test": {
+          "average_accuracy": 0.4401622718052738,
+          "overall_accuracy": 0.44016227180527384,
+          "macro_f1": 0.4382524173382982
+        }
+      }
+    ],
+    "aggregate": {
+      "average_accuracy": {
+        "mean": 0.4359026369168356,
+        "std": 0.007627422181323789
+      },
+      "overall_accuracy": {
+        "mean": 0.43590263691683573,
+        "std": 0.007627422181323807
+      },
+      "macro_f1": {
+        "mean": 0.43296975492412937,
+        "std": 0.006781281368761682
+      }
+    },
+    "checkpoint": {
+      "path": "weights/downstream/classification/geobench_224/m-so2sat_best_head.pth",
+      "seed": 2,
+      "best_epoch": 46,
+      "best_validation_score": 0.45537525354969566
+    }
+  },
+  "head_checkpoint": "best_head.pth"
+}

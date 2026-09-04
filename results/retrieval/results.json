@@ -1,0 +1,153 @@
+{
+  "dataset": "BENv2-14k",
+  "data_root": "${BENV2_14K_ROOT}",
+  "checkpoint": "weights/pretrained/meox_s_mmearth64_best.pth",
+  "preprocessing": "benv2_cbir_v1_mmearth_zscore_masked_resize",
+  "normalization": "MMEarth pretraining z-score statistics",
+  "mmearth_stats": "${MMEARTH64_ROOT}/_band_stats.json",
+  "metadata_policy": "all unavailable checkpoint metadata is explicitly missing",
+  "token_source": "pre_norm",
+  "pooling": "mean_fine",
+  "spatial_protocol": "model_input",
+  "input_image_size": 64,
+  "query_split": "validation",
+  "archive_split": "test",
+  "mean_estimation_split": "train",
+  "primary_representation": "raw_l2",
+  "diagnostic_representation": "train_mean_centered_l2",
+  "metric_definition": "CSMoE pair-averaged multilabel precision and recall; F1 is their harmonic mean",
+  "k": 5,
+  "split_sizes": {
+    "train": 7180,
+    "validation": 3255,
+    "test": 3248
+  },
+  "evaluated_split_sizes": {
+    "train": 7180,
+    "validation": 3255,
+    "test": 3248
+  },
+  "class_names": [
+    "Urban fabric",
+    "Industrial or commercial units",
+    "Arable land",
+    "Permanent crops",
+    "Pastures",
+    "Complex cultivation patterns",
+    "Land principally occupied by agriculture, with significant areas of natural vegetation",
+    "Agro-forestry areas",
+    "Broad-leaved forest",
+    "Coniferous forest",
+    "Mixed forest",
+    "Natural grassland and sparsely vegetated areas",
+    "Moors, heathland and sclerophyllous vegetation",
+    "Transitional woodland, shrub",
+    "Beaches, dunes, sands",
+    "Inland wetlands",
+    "Coastal wetlands",
+    "Inland waters",
+    "Marine waters"
+  ],
+  "source_bands": {
+    "sentinel1": [
+      "VV",
+      "VH"
+    ],
+    "sentinel2": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B5",
+      "B6",
+      "B7",
+      "B8A",
+      "B11",
+      "B12"
+    ]
+  },
+  "s1_adapter_counts": {
+    "train": {
+      "sentinel1_asc": 4909,
+      "sentinel1_desc": 2271
+    },
+    "validation": {
+      "sentinel1_asc": 2429,
+      "sentinel1_desc": 826
+    },
+    "test": {
+      "sentinel1_asc": 2871,
+      "sentinel1_desc": 377
+    }
+  },
+  "results": {
+    "raw_l2": {
+      "S1_to_S1": {
+        "precision": 0.623949016165606,
+        "recall": 0.6656622778143515,
+        "f1": 0.644131026580907,
+        "k": 5,
+        "queries": 3255,
+        "archive": 3248
+      },
+      "S2_to_S2": {
+        "precision": 0.6542214175992977,
+        "recall": 0.672649842732792,
+        "f1": 0.6633076573690397,
+        "k": 5,
+        "queries": 3255,
+        "archive": 3248
+      },
+      "S1_to_S2": {
+        "precision": 0.37755145929339473,
+        "recall": 0.4139471874771414,
+        "f1": 0.39491252534686966,
+        "k": 5,
+        "queries": 3255,
+        "archive": 3248
+      },
+      "S2_to_S1": {
+        "precision": 0.4502775217613928,
+        "recall": 0.35981442469460906,
+        "f1": 0.39999495897788034,
+        "k": 5,
+        "queries": 3255,
+        "archive": 3248
+      }
+    },
+    "train_mean_centered_l2": {
+      "S1_to_S1": {
+        "precision": 0.6230607124570259,
+        "recall": 0.6656144393241168,
+        "f1": 0.6436349862318136,
+        "k": 5,
+        "queries": 3255,
+        "archive": 3248
+      },
+      "S2_to_S2": {
+        "precision": 0.6653195815960792,
+        "recall": 0.6745082290980908,
+        "f1": 0.6698823971031739,
+        "k": 5,
+        "queries": 3255,
+        "archive": 3248
+      },
+      "S1_to_S2": {
+        "precision": 0.4260054129178553,
+        "recall": 0.3579981713115354,
+        "f1": 0.3890521978756293,
+        "k": 5,
+        "queries": 3255,
+        "archive": 3248
+      },
+      "S2_to_S1": {
+        "precision": 0.28046229244385923,
+        "recall": 0.2703384536610343,
+        "f1": 0.27530733386139133,
+        "k": 5,
+        "queries": 3255,
+        "archive": 3248
+      }
+    }
+  }
+}

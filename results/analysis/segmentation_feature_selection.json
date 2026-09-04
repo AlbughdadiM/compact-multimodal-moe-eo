@@ -1,0 +1,86 @@
+{
+  "checkpoint": "weights/pretrained/meox_s_mmearth64_best.pth",
+  "feature_layers": [
+    4,
+    8,
+    11,
+    14
+  ],
+  "selected_candidate": "multilayer_pre_norm",
+  "selection_metric": "mean_validation_miou_across_tasks",
+  "tie_tolerance": 0.005,
+  "input_image_size": 64,
+  "label_image_size": 224,
+  "probe_epochs": 50,
+  "probe_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "validation": [
+    {
+      "dataset": "m-cashew-plant",
+      "candidate": "multilayer_pre_norm",
+      "mean_validation_miou": 0.21380100895662696,
+      "std_validation_miou": 0.0011277787074408926
+    },
+    {
+      "dataset": "m-cashew-plant",
+      "candidate": "multilayer_post_norm",
+      "mean_validation_miou": 0.21062844075138343,
+      "std_validation_miou": 0.0006771857380584917
+    },
+    {
+      "dataset": "m-cashew-plant",
+      "candidate": "final_pre_norm",
+      "mean_validation_miou": 0.22073510380964229,
+      "std_validation_miou": 0.000983071347172292
+    },
+    {
+      "dataset": "m-cashew-plant",
+      "candidate": "final_post_norm",
+      "mean_validation_miou": 0.21486332806151184,
+      "std_validation_miou": 0.0011151371404519701
+    },
+    {
+      "dataset": "m-SA-crop-type",
+      "candidate": "multilayer_pre_norm",
+      "mean_validation_miou": 0.22967858976776828,
+      "std_validation_miou": 0.0030999264364965154
+    },
+    {
+      "dataset": "m-SA-crop-type",
+      "candidate": "multilayer_post_norm",
+      "mean_validation_miou": 0.2313006875289625,
+      "std_validation_miou": 0.0011386224536881343
+    },
+    {
+      "dataset": "m-SA-crop-type",
+      "candidate": "final_pre_norm",
+      "mean_validation_miou": 0.22417070608623443,
+      "std_validation_miou": 0.0038736699707682684
+    },
+    {
+      "dataset": "m-SA-crop-type",
+      "candidate": "final_post_norm",
+      "mean_validation_miou": 0.22527180451890866,
+      "std_validation_miou": 0.002257916971731116
+    }
+  ],
+  "test": [
+    {
+      "dataset": "m-cashew-plant",
+      "candidate": "multilayer_pre_norm",
+      "mean_test_miou": 0.16578444808652365,
+      "std_test_miou": 0.0008550122495618738
+    },
+    {
+      "dataset": "m-SA-crop-type",
+      "candidate": "multilayer_pre_norm",
+      "mean_test_miou": 0.2248142995028196,
+      "std_test_miou": 0.004636042592432143
+    }
+  ]
+}

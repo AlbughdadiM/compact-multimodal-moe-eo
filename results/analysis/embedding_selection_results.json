@@ -1,0 +1,35 @@
+{
+  "checkpoint": "weights/pretrained/meox_s_mmearth64_best.pth",
+  "preprocessing_signature": "v2_eurosat_physical_band_order_m-eurosat",
+  "selected_candidate": "pre_norm__mean_fine",
+  "selection_metric": "validation_average_accuracy",
+  "tie_tolerance": 0.005,
+  "probe_epochs": 50,
+  "probe_learning_rate": 0.05,
+  "probe_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "split_sizes": {
+    "train": 2000,
+    "valid": 1000,
+    "test": 1000
+  },
+  "test_aggregate": {
+    "test_average_accuracy": {
+      "mean": 0.897,
+      "std": 0.0033166247903553946
+    },
+    "test_overall_accuracy": {
+      "mean": 0.897,
+      "std": 0.003316624790355403
+    },
+    "test_macro_f1": {
+      "mean": 0.897393231147866,
+      "std": 0.0030461851661507016
+    }
+  }
+}

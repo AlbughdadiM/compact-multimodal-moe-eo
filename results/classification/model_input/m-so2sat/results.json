@@ -1,0 +1,131 @@
+{
+  "dataset": "m-so2sat",
+  "checkpoint": "weights/pretrained/meox_s_mmearth64_best.pth",
+  "token_source": "pre_norm",
+  "pooling": "mean_fine",
+  "input_normalization": "geobench_official_per_band_zscore",
+  "input_image_size": 64,
+  "spatial_protocol": "model_input",
+  "nodata_policy": "raw_zero_and_nonfinite_are_invalid",
+  "partition": "default",
+  "s1_modality": "sentinel1_asc",
+  "preprocessing_signature": "v3_zero_nodata_masked_resize_m-so2sat_input_64",
+  "source_bands": {
+    "sentinel2": [
+      "02 - Blue",
+      "03 - Green",
+      "04 - Red",
+      "05 - Vegetation Red Edge",
+      "06 - Vegetation Red Edge",
+      "07 - Vegetation Red Edge",
+      "08A - Vegetation Red Edge",
+      "08 - NIR",
+      "11 - SWIR",
+      "12 - SWIR"
+    ],
+    "sentinel1_asc": [
+      "06 - VV.LEE Filtered",
+      "05 - VH.LEE Filtered"
+    ]
+  },
+  "model_band_names": {
+    "sentinel2": [
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8A",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "sentinel1_asc": [
+      "VV",
+      "VH"
+    ]
+  },
+  "split_sizes": {
+    "train": 19992,
+    "valid": 986,
+    "test": 986
+  },
+  "probe_loss": "cross_entropy",
+  "linear_probe": {
+    "selection_metric": "average_accuracy",
+    "runs": [
+      {
+        "seed": 0,
+        "best_epoch": 50,
+        "best_val_score": 0.4949290060851928,
+        "test": {
+          "average_accuracy": 0.4594320486815415,
+          "overall_accuracy": 0.4594320486815416,
+          "macro_f1": 0.4606175941487103
+        }
+      },
+      {
+        "seed": 1,
+        "best_epoch": 43,
+        "best_val_score": 0.4949290060851927,
+        "test": {
+          "average_accuracy": 0.4563894523326572,
+          "overall_accuracy": 0.4563894523326572,
+          "macro_f1": 0.45498979466982614
+        }
+      },
+      {
+        "seed": 2,
+        "best_epoch": 47,
+        "best_val_score": 0.497971602434077,
+        "test": {
+          "average_accuracy": 0.45740365111561865,
+          "overall_accuracy": 0.45740365111561865,
+          "macro_f1": 0.45871509330119004
+        }
+      },
+      {
+        "seed": 3,
+        "best_epoch": 46,
+        "best_val_score": 0.5030425963488844,
+        "test": {
+          "average_accuracy": 0.46450304259634884,
+          "overall_accuracy": 0.4645030425963489,
+          "macro_f1": 0.4656215682904257
+        }
+      },
+      {
+        "seed": 4,
+        "best_epoch": 41,
+        "best_val_score": 0.4949290060851928,
+        "test": {
+          "average_accuracy": 0.46348884381338745,
+          "overall_accuracy": 0.4634888438133874,
+          "macro_f1": 0.46510839556173084
+        }
+      }
+    ],
+    "aggregate": {
+      "average_accuracy": {
+        "mean": 0.4602434077079107,
+        "std": 0.0032327337627807724
+      },
+      "overall_accuracy": {
+        "mean": 0.4602434077079107,
+        "std": 0.0032327337627807732
+      },
+      "macro_f1": {
+        "mean": 0.4610104891943766,
+        "std": 0.0039931656215825145
+      }
+    },
+    "checkpoint": {
+      "path": "weights/downstream/classification/model_input/m-so2sat_best_head.pth",
+      "seed": 3,
+      "best_epoch": 46,
+      "best_validation_score": 0.5030425963488844
+    }
+  },
+  "head_checkpoint": "best_head.pth"
+}

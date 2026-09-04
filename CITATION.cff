@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use MEOX, please cite the accompanying paper."
+title: "MEOX: Compact Multimodal Mixture-of-Experts for Earth Observation"
+type: software
+authors:
+  - family-names: Albughdadi
+    given-names: Mohanad
+    email: mohanad.albughdadi@ecmwf.int
+license: MIT
+version: 0.1.0
+date-released: 2026-09-04
+preferred-citation:
+  type: article
+  title: "MEOX: Compact Multimodal Mixture-of-Experts for Earth Observation"
+  authors:
+    - family-names: Albughdadi
+      given-names: Mohanad
+  year: 2026
+

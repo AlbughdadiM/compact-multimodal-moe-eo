@@ -1,0 +1,129 @@
+{
+  "dataset": "m-eurosat",
+  "checkpoint": "weights/pretrained/meox_s_mmearth64_best.pth",
+  "token_source": "pre_norm",
+  "pooling": "mean_fine",
+  "input_normalization": "geobench_official_per_band_zscore",
+  "input_image_size": 64,
+  "spatial_protocol": "model_input",
+  "nodata_policy": "raw_zero_and_nonfinite_are_invalid",
+  "partition": "default",
+  "s1_modality": "sentinel1_asc",
+  "preprocessing_signature": "v3_zero_nodata_masked_resize_m-eurosat_input_64",
+  "source_bands": {
+    "sentinel2": [
+      "01 - Coastal aerosol",
+      "02 - Blue",
+      "03 - Green",
+      "04 - Red",
+      "05 - Vegetation Red Edge",
+      "06 - Vegetation Red Edge",
+      "07 - Vegetation Red Edge",
+      "12 - SWIR",
+      "08 - NIR",
+      "08A - Vegetation Red Edge",
+      "09 - Water vapour",
+      "10 - SWIR - Cirrus",
+      "11 - SWIR"
+    ]
+  },
+  "model_band_names": {
+    "sentinel2": [
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8A",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12"
+    ]
+  },
+  "split_sizes": {
+    "train": 2000,
+    "valid": 1000,
+    "test": 1000
+  },
+  "probe_loss": "cross_entropy",
+  "linear_probe": {
+    "selection_metric": "average_accuracy",
+    "runs": [
+      {
+        "seed": 0,
+        "best_epoch": 50,
+        "best_val_score": 0.8940000000000001,
+        "test": {
+          "average_accuracy": 0.9,
+          "overall_accuracy": 0.9,
+          "macro_f1": 0.9000915296990945
+        }
+      },
+      {
+        "seed": 1,
+        "best_epoch": 49,
+        "best_val_score": 0.898,
+        "test": {
+          "average_accuracy": 0.897,
+          "overall_accuracy": 0.897,
+          "macro_f1": 0.8973779576862887
+        }
+      },
+      {
+        "seed": 2,
+        "best_epoch": 49,
+        "best_val_score": 0.893,
+        "test": {
+          "average_accuracy": 0.9,
+          "overall_accuracy": 0.9,
+          "macro_f1": 0.9000442558994592
+        }
+      },
+      {
+        "seed": 3,
+        "best_epoch": 44,
+        "best_val_score": 0.8940000000000001,
+        "test": {
+          "average_accuracy": 0.892,
+          "overall_accuracy": 0.892,
+          "macro_f1": 0.8926547391350944
+        }
+      },
+      {
+        "seed": 4,
+        "best_epoch": 43,
+        "best_val_score": 0.897,
+        "test": {
+          "average_accuracy": 0.8960000000000001,
+          "overall_accuracy": 0.896,
+          "macro_f1": 0.8967976733193925
+        }
+      }
+    ],
+    "aggregate": {
+      "average_accuracy": {
+        "mean": 0.897,
+        "std": 0.0029664793948382603
+      },
+      "overall_accuracy": {
+        "mean": 0.897,
+        "std": 0.0029664793948382677
+      },
+      "macro_f1": {
+        "mean": 0.897393231147866,
+        "std": 0.0027245908414257843
+      }
+    },
+    "checkpoint": {
+      "path": "weights/downstream/classification/model_input/m-eurosat_best_head.pth",
+      "seed": 1,
+      "best_epoch": 49,
+      "best_validation_score": 0.898
+    }
+  },
+  "head_checkpoint": "best_head.pth"
+}

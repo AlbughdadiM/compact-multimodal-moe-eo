@@ -1,0 +1,127 @@
+{
+  "dataset": "m-bigearthnet",
+  "checkpoint": "weights/pretrained/meox_s_mmearth64_best.pth",
+  "token_source": "pre_norm",
+  "pooling": "mean_fine",
+  "input_normalization": "geobench_official_per_band_zscore",
+  "input_image_size": 64,
+  "spatial_protocol": "model_input",
+  "nodata_policy": "raw_zero_and_nonfinite_are_invalid",
+  "partition": "default",
+  "s1_modality": "sentinel1_asc",
+  "preprocessing_signature": "v3_zero_nodata_masked_resize_m-bigearthnet_input_64",
+  "source_bands": {
+    "sentinel2": [
+      "01 - Coastal aerosol",
+      "02 - Blue",
+      "03 - Green",
+      "04 - Red",
+      "05 - Vegetation Red Edge",
+      "06 - Vegetation Red Edge",
+      "07 - Vegetation Red Edge",
+      "08A - Vegetation Red Edge",
+      "08 - NIR",
+      "09 - Water vapour",
+      "11 - SWIR",
+      "12 - SWIR"
+    ]
+  },
+  "model_band_names": {
+    "sentinel2": [
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8A",
+      "B8",
+      "B9",
+      "B11",
+      "B12"
+    ]
+  },
+  "split_sizes": {
+    "train": 20000,
+    "valid": 1000,
+    "test": 1000
+  },
+  "probe_loss": "balanced_binary_cross_entropy",
+  "linear_probe": {
+    "selection_metric": "micro_map",
+    "runs": [
+      {
+        "seed": 0,
+        "best_epoch": 45,
+        "best_val_score": 0.5348647096783032,
+        "test": {
+          "micro_map": 0.5519566979044828,
+          "macro_map": 0.4423897969331851,
+          "micro_f1": 0.45477282200917046
+        }
+      },
+      {
+        "seed": 1,
+        "best_epoch": 46,
+        "best_val_score": 0.5338258231774728,
+        "test": {
+          "micro_map": 0.5492564966969766,
+          "macro_map": 0.441313913564367,
+          "micro_f1": 0.459214501510574
+        }
+      },
+      {
+        "seed": 2,
+        "best_epoch": 50,
+        "best_val_score": 0.532978350198182,
+        "test": {
+          "micro_map": 0.5505189078354265,
+          "macro_map": 0.4441716719274282,
+          "micro_f1": 0.46018570624648286
+        }
+      },
+      {
+        "seed": 3,
+        "best_epoch": 50,
+        "best_val_score": 0.5355877349224627,
+        "test": {
+          "micro_map": 0.5536425360432029,
+          "macro_map": 0.44323916688591547,
+          "micro_f1": 0.4592582186007305
+        }
+      },
+      {
+        "seed": 4,
+        "best_epoch": 49,
+        "best_val_score": 0.5357857791626861,
+        "test": {
+          "micro_map": 0.5526581306832609,
+          "macro_map": 0.4449071700035718,
+          "micro_f1": 0.46099541122485
+        }
+      }
+    ],
+    "aggregate": {
+      "micro_map": {
+        "mean": 0.5516065538326699,
+        "std": 0.0015543088921880313
+      },
+      "macro_map": {
+        "mean": 0.44320434386289354,
+        "std": 0.0012707294367433576
+      },
+      "micro_f1": {
+        "mean": 0.45888533191836156,
+        "std": 0.0021588674310586116
+      }
+    },
+    "checkpoint": {
+      "path": "weights/downstream/classification/model_input/m-bigearthnet_best_head.pth",
+      "seed": 4,
+      "best_epoch": 49,
+      "best_validation_score": 0.5357857791626861
+    }
+  },
+  "head_checkpoint": "best_head.pth"
+}

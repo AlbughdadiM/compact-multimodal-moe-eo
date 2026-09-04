@@ -1,0 +1,660 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 85,
+      "sha256": "ff5592a5a26fb52e63b9b48ee5f9437b9a8615d99dffc4dc2522c396f740e173"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 181,
+      "sha256": "883848a97770dc00a7d5cf66366368fc0bb1a096745a83cc64fc6e4ec70a846c"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 526,
+      "sha256": "49f96da7956d95bf11a779cec7c9d1bae200ef37fd47c420a8c0df233870901d"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1176,
+      "sha256": "952d81c57cdb58d2b3d7f005898d91c669094b6a5f23df8fe6ff389a18a638d6"
+    },
+    {
+      "path": "MODEL_CARD.md",
+      "bytes": 4366,
+      "sha256": "497f8415c3d3c44d4eecec6563db30c289b94bff8c3b96403c2a70716a05448e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8549,
+      "sha256": "e1b6d5c3c8f3fa5d8f359a372d7626392af27939a1fd983c186ffd296d0a1992"
+    },
+    {
+      "path": "benchmarks/csmoe_efficiency_reference.csv",
+      "bytes": 5925,
+      "sha256": "e2cab840efa40aa38af67488e0f979035624254f661dd94834287c385268bdd4"
+    },
+    {
+      "path": "configs/pretrain_mmearth_moe_mae_full.yaml",
+      "bytes": 908,
+      "sha256": "fb17976dc40146c94d20ef5b41d8430b32953ed32233f47f24fa9549d6b44dc9"
+    },
+    {
+      "path": "configs/pretrain_mmearth_moe_mae_smoke_test.yaml",
+      "bytes": 970,
+      "sha256": "97225ad25b42ebfbd932cd94fbb31e4e95719501beb43e1e7aa090a4e24e0b44"
+    },
+    {
+      "path": "configs/pretrain_mmearth_moe_mae_subset_100k.yaml",
+      "bytes": 986,
+      "sha256": "4e5846adb51c355a706bb0ae765253df3ec5402b6bd3f917b1f146c12af68217"
+    },
+    {
+      "path": "configs/pretrain_mmearth_moe_mae_subset_200k.yaml",
+      "bytes": 986,
+      "sha256": "483649d631ae2741ec5e22887daabfa096fd413266a27ba808bf459b66f273e7"
+    },
+    {
+      "path": "configs/pretrain_mmearth_moe_mae_subset_50k.yaml",
+      "bytes": 984,
+      "sha256": "1e4eb5d06f9c2a9925edd8d042690a04c9f13abe6030f9d70d10a8f3594dfbe3"
+    },
+    {
+      "path": "datasets/__init__.py",
+      "bytes": 65,
+      "sha256": "6565207bba1c6daef7cb32d2a54799486d158c9444c0bbc2cf1e963e38c4908c"
+    },
+    {
+      "path": "datasets/bigearthnet_cbir.py",
+      "bytes": 21338,
+      "sha256": "a8714423ab320727ed28c50395782e99e157636930803598a66ac40198b88999"
+    },
+    {
+      "path": "datasets/geobench.py",
+      "bytes": 14815,
+      "sha256": "fee9efab7b19e1ceabf8a4174086c280e338de6acfcfacf057cc0470fb390461"
+    },
+    {
+      "path": "datasets/mmearth.py",
+      "bytes": 24628,
+      "sha256": "8061a8934e962ec1caf8d79ba63bd9a59e885b73b562b53111eb0523797f1631"
+    },
+    {
+      "path": "docs/NOTES.md",
+      "bytes": 40365,
+      "sha256": "731c543b57cdde40bb6cbdadf455bc6417f04ed3af91d52e95287c73e3914d3d"
+    },
+    {
+      "path": "docs/assets/architecture.png",
+      "bytes": 246928,
+      "sha256": "e7d62b25b12985fea5a32cacbfb598b62ba6a6f47cfc5b97aec3952536a97abb"
+    },
+    {
+      "path": "docs/assets/cashew_qualitative.png",
+      "bytes": 1033842,
+      "sha256": "034def3e4132372b320429f112d4ea2a0647c8436f0a3f8f7d6958a68e9b8a91"
+    },
+    {
+      "path": "docs/assets/efficiency.png",
+      "bytes": 89878,
+      "sha256": "0d1b3b96c98b79dca13a664fdb7105e82423b6c7b79c58eef53eb320bf0c1e11"
+    },
+    {
+      "path": "docs/assets/embedding_anisotropy.png",
+      "bytes": 64667,
+      "sha256": "b6775105fc134bed7d2da1911bf7beb9cff1366bb448cbcc01bf691ef73d6236"
+    },
+    {
+      "path": "docs/assets/embedding_selection.png",
+      "bytes": 88707,
+      "sha256": "62cb493f4b94f4cb305b4e2c124c30823aede0f159fe6e92e5539cddfa2d3c1f"
+    },
+    {
+      "path": "docs/assets/normalization_ablation.png",
+      "bytes": 56173,
+      "sha256": "db55edcdd463b9745e57bad727a2f18eb6ad7995b11cc306856039648aee5b87"
+    },
+    {
+      "path": "docs/assets/pretraining_curves.png",
+      "bytes": 133156,
+      "sha256": "0f33f341267ac65984ef7c8d3f1a2724f797fc3a8fe0d386375160b17905208a"
+    },
+    {
+      "path": "docs/assets/routing.png",
+      "bytes": 109582,
+      "sha256": "2a61f51948ac55e90457689d9691b6e6cbf3c6f5bb0e84ec91667adc0cc16ff6"
+    },
+    {
+      "path": "docs/manuscript.pdf",
+      "bytes": 456651,
+      "sha256": "115cab4d1e357dc9dee9f47fd10a870977e9cc314a438bb196b8104e4c51a857"
+    },
+    {
+      "path": "evaluate_bigearthnet_cbir.py",
+      "bytes": 17164,
+      "sha256": "b56d982dc0911ac54b126e3a60a371760359c60177b57a5f9d95349ff59846a7"
+    },
+    {
+      "path": "evaluate_geobench_classification.py",
+      "bytes": 9686,
+      "sha256": "b178cca4ea29e6339dfa529521a576cc5ebd6f26469ce186c191a9138270d29f"
+    },
+    {
+      "path": "evaluate_geobench_segmentation.py",
+      "bytes": 11084,
+      "sha256": "b5eeb92c607e94b01ea04d97be02393ffb4fa90b10b94c6b46415bc6d77b3274"
+    },
+    {
+      "path": "evaluate_mmearth_metadata.py",
+      "bytes": 27824,
+      "sha256": "b4f17d74c2eb816c0fffd5e4b4e0ae7d16261e98f55d0c75c6731d726c5ebcb5"
+    },
+    {
+      "path": "examples/inference_mmearth.py",
+      "bytes": 3251,
+      "sha256": "9c898202a7c46f75dcaac2748e94dd3af7eacdc70948813dce4a003431b29ddd"
+    },
+    {
+      "path": "extract_embeddings.py",
+      "bytes": 148,
+      "sha256": "3b328e0c9f6b74f799c7350fda54a073bcae725216e0ff71959d532a6b7b9b44"
+    },
+    {
+      "path": "finetune_geobench_classification.py",
+      "bytes": 27735,
+      "sha256": "37094ba887fc95dac46db953d21c88c1ca922a3eff9263cd86ce212181d759d9"
+    },
+    {
+      "path": "finetune_geobench_segmentation.py",
+      "bytes": 31754,
+      "sha256": "51dc5f5d05a351ab8af79e407569e33fe9f941b363f3ae001631e80c6e8e961c"
+    },
+    {
+      "path": "models/__init__.py",
+      "bytes": 142,
+      "sha256": "bc60b6f473486f3955dd3592ab19f88afaa37f936ec77badc9fe0ad47bfd6d1d"
+    },
+    {
+      "path": "models/moe_mae.py",
+      "bytes": 46986,
+      "sha256": "eeca5c1ff69a3db88339df17b6ab02eff4599fab53fd2778ace8e60d4f0b4669"
+    },
+    {
+      "path": "notebooks/README.md",
+      "bytes": 1121,
+      "sha256": "fa45313238ff4086f9e21b5f4ba55c93b277f5e89ff6d1acb304c827b1bb54de"
+    },
+    {
+      "path": "notebooks/csmoe_efficiency_comparison.ipynb",
+      "bytes": 15020,
+      "sha256": "f0202aed80886c77c674ae0942d2997a3fc00ec596596471e17efabdfa2b26e8"
+    },
+    {
+      "path": "notebooks/embedding_exploration_mmearth.ipynb",
+      "bytes": 17946,
+      "sha256": "71969cf59ff9d65820d47b7cbd8ebfd900c6ce103b020736af66f64c0cb636e7"
+    },
+    {
+      "path": "notebooks/eurosat_embedding_anisotropy.ipynb",
+      "bytes": 32524,
+      "sha256": "27e524e9f1cfeca399aa87963b40db82c56128cfecf2e1bcf3a44051a8320247"
+    },
+    {
+      "path": "notebooks/eurosat_embedding_selection.ipynb",
+      "bytes": 29163,
+      "sha256": "656023a883bd44560e232b0b8eb11665c457ac057120aff8e91c58ed0eb78748"
+    },
+    {
+      "path": "notebooks/eurosat_input_normalization_ablation.ipynb",
+      "bytes": 38138,
+      "sha256": "453d4e270c08fec1fb0eb38d5a515863738c607624204f74b837762e4f20f356"
+    },
+    {
+      "path": "notebooks/geobench_downstream_visualization.ipynb",
+      "bytes": 33045,
+      "sha256": "e1a78dcbab3be6a2b967893bde170e080f35db44400f3be7ba382fdf2e744c3e"
+    },
+    {
+      "path": "notebooks/geobench_segmentation_feature_selection.ipynb",
+      "bytes": 16261,
+      "sha256": "0be8f8cc20f7f589c36a14b49ee8c3eea0296a7f86f8fb0649c7f5acdf500c1b"
+    },
+    {
+      "path": "notebooks/moe_routing_analysis_mmearth.ipynb",
+      "bytes": 69386,
+      "sha256": "bb4743a95a3d294a77adffb3f9a7e3683a91a130c18ebe93ac3fe828bee4dbf7"
+    },
+    {
+      "path": "pretrain_mae.py",
+      "bytes": 33853,
+      "sha256": "12f21a206cd80dea5fcf4687951051364481412e261d67482ca7fbe681df7267"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 1578,
+      "sha256": "3f70c7187967129453415121000d0cd9536e27f745bed570f595d6af613e7295"
+    },
+    {
+      "path": "requirements-geobench.txt",
+      "bytes": 669,
+      "sha256": "1f0a39b8f90260ca99e0be89734de500abafa0dea97b8fcaabfd9e30d2102c74"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 374,
+      "sha256": "49d96713f4986947b4bef26b4efee6d7d387a2246b2486f3972806eba98ab363"
+    },
+    {
+      "path": "results/README.md",
+      "bytes": 742,
+      "sha256": "50cd370ccd59a6566275790769febd0455cd446b12bb187ae0eb6042af2b5a25"
+    },
+    {
+      "path": "results/analysis/embedding_geometry.csv",
+      "bytes": 445,
+      "sha256": "f420b4a1a443c495b5dd8540a7780b33c7cecb984b021e5b3742eb3f87134991"
+    },
+    {
+      "path": "results/analysis/embedding_selection_results.json",
+      "bytes": 767,
+      "sha256": "c24efaafb9b66e00338651840d5ddab26d9269d197a0502181d5f4ca3938b2c1"
+    },
+    {
+      "path": "results/analysis/embedding_selection_validation.csv",
+      "bytes": 1459,
+      "sha256": "f6e03d06d86ddf56d6914cfa6cac25cd0b0a2a9fd644601691ac1d53f89ee770"
+    },
+    {
+      "path": "results/analysis/input_normalization_results.json",
+      "bytes": 932,
+      "sha256": "ca0e4924a5389d643ccd7af7723f5fc5856ab020278b10d0ca7a878a9f0e5cdf"
+    },
+    {
+      "path": "results/analysis/input_normalization_validation.csv",
+      "bytes": 428,
+      "sha256": "e43c61e451303a76ba9c58df4455c6d3e2a06923b56e2f304659033b3f9d2ed0"
+    },
+    {
+      "path": "results/analysis/segmentation_feature_selection.json",
+      "bytes": 2301,
+      "sha256": "38a9848a90e799749ee31f07f8e5998fcae37df0760874deb72f4ffb0d8b8fd0"
+    },
+    {
+      "path": "results/classification/geobench_224/m-bigearthnet/results.json",
+      "bytes": 3146,
+      "sha256": "3fc61609e0303ba0f40a8da33ab9f2b8aa291891962227799d75e53c53cffaaf"
+    },
+    {
+      "path": "results/classification/geobench_224/m-brick-kiln/results.json",
+      "bytes": 3250,
+      "sha256": "c3b2d5192ee559bc068a72b155c0e6af30a848f46f07ce42bcd8190a266ee858"
+    },
+    {
+      "path": "results/classification/geobench_224/m-eurosat/results.json",
+      "bytes": 3113,
+      "sha256": "fa1a1c6068d695546bfae3303c6704b940d0a5330594e55c5ef7d9a2d01c0595"
+    },
+    {
+      "path": "results/classification/geobench_224/m-so2sat/results.json",
+      "bytes": 3271,
+      "sha256": "b3b6ddcd592c1430381f056fc8e7bb7aedc761f832e3fe4ef4b9837c042f0958"
+    },
+    {
+      "path": "results/classification/model_input/m-bigearthnet/results.json",
+      "bytes": 3140,
+      "sha256": "a3241cff8909524943bc82dd0ce821687474e39af11633f9f93fccaa8307b33a"
+    },
+    {
+      "path": "results/classification/model_input/m-brick-kiln/results.json",
+      "bytes": 3246,
+      "sha256": "c5fbab007d4bd5ee5ca320d8643068b47049c47b665b81f9c835f5304b2e1bb9"
+    },
+    {
+      "path": "results/classification/model_input/m-eurosat/results.json",
+      "bytes": 3039,
+      "sha256": "3d63d1b5ce3fa93b142e51fc0d967461b720a96b74932b37886f0184faa0c8ca"
+    },
+    {
+      "path": "results/classification/model_input/m-so2sat/results.json",
+      "bytes": 3265,
+      "sha256": "7880b2cd0d706955878da9853de75833a7c68faea639a3ecfdf136e13ac5af5f"
+    },
+    {
+      "path": "results/finetuning/bigearthnet/geobench_224/optimization_history.csv",
+      "bytes": 4243,
+      "sha256": "d5cfdd105de33c396e95dc28edbb66484243582cedf9d3fbae9b1e925ab15227"
+    },
+    {
+      "path": "results/finetuning/bigearthnet/geobench_224/results.json",
+      "bytes": 15449,
+      "sha256": "21ddb6a9406ba35d1bedeeaffd0666ee14d0c7d4a3e12fbe58014a87d58f6efa"
+    },
+    {
+      "path": "results/finetuning/bigearthnet/model_input/optimization_history.csv",
+      "bytes": 4240,
+      "sha256": "71b94fe9e4e720f033e26cba03e2ed1dd7f516397fc78898814555992a9a0043"
+    },
+    {
+      "path": "results/finetuning/bigearthnet/model_input/results.json",
+      "bytes": 15446,
+      "sha256": "ab5549e2f246424f10c71068083064847a3d1c05322b680fc1916b1e14c1cbdc"
+    },
+    {
+      "path": "results/metadata_ablation/all/history.csv",
+      "bytes": 3118,
+      "sha256": "b71cfcb009be2fe3543f238639da7761c0880f151a99c84f010a6898a02cc82b"
+    },
+    {
+      "path": "results/metadata_ablation/all/results.json",
+      "bytes": 5309,
+      "sha256": "43c95d47c253b4f1d70a39e16578347e307d1479171a82c7ecbb0da1eda85cb2"
+    },
+    {
+      "path": "results/metadata_ablation/experiment.json",
+      "bytes": 4048,
+      "sha256": "d66e00f1f3e5b727e451b198f97ddd83447731fa00e3ac12507d0349b960af0a"
+    },
+    {
+      "path": "results/metadata_ablation/no_era5/history.csv",
+      "bytes": 3109,
+      "sha256": "445914a1931efce7bb5ca325a37b50f79f1a2eec6579f7bc65a0adf67e33e1a5"
+    },
+    {
+      "path": "results/metadata_ablation/no_era5/results.json",
+      "bytes": 5313,
+      "sha256": "839eb37cc17cb64fa64e6401fd7156e828a9f782762ebbb76cffbcf54ba8b815"
+    },
+    {
+      "path": "results/metadata_ablation/no_location/history.csv",
+      "bytes": 3118,
+      "sha256": "aae7a127b0bfe834dd21e09c231d33af2717593bed98e6def3c99efafb38a6cf"
+    },
+    {
+      "path": "results/metadata_ablation/no_location/results.json",
+      "bytes": 5309,
+      "sha256": "a23d51b923d51b6925d640b45f92efa4759fa057abfb4f3da1cdb769ee23fb30"
+    },
+    {
+      "path": "results/metadata_ablation/no_month/history.csv",
+      "bytes": 3105,
+      "sha256": "6203ed6ae4c1e914b9712b96fa2b61c84e7e587a649d7597d3104296086a491f"
+    },
+    {
+      "path": "results/metadata_ablation/no_month/results.json",
+      "bytes": 5312,
+      "sha256": "31efa7e65ce42ec4dc3167f62f1bf0e0fe9eb808396d3aedcae32213139fa83f"
+    },
+    {
+      "path": "results/metadata_ablation/none/history.csv",
+      "bytes": 3118,
+      "sha256": "761bda3ca3cd6390870b4021e27a048ba0c013a5c58c8c8649008b5b03aa6daa"
+    },
+    {
+      "path": "results/metadata_ablation/none/results.json",
+      "bytes": 5311,
+      "sha256": "efaf5a15217b3b3ba1ee0078889b48ad5c9b414fef7888d3f68215ae356c7ade"
+    },
+    {
+      "path": "results/metadata_ablation/partitions.json",
+      "bytes": 1955770,
+      "sha256": "03950f3e4ab7d9adaebe017712f5a3af3fd32066f64270906c4e0e4f7288e82b"
+    },
+    {
+      "path": "results/metadata_ablation/per_class_iou.csv",
+      "bytes": 6727,
+      "sha256": "d8c1d1be70f15c21e9a98b7428995c83cc73ef8fa8b942673d484ec1820e32c3"
+    },
+    {
+      "path": "results/metadata_ablation/results.json",
+      "bytes": 48825,
+      "sha256": "049e9758994152ac4448d749fe9d5afaf0b06f0909c05c2399a3df3e63830923"
+    },
+    {
+      "path": "results/metadata_ablation/summary.csv",
+      "bytes": 1029,
+      "sha256": "a9c665f4108b980fa910fb8eb91c21942cbc1b2dedaeef62125c17cad727195f"
+    },
+    {
+      "path": "results/pretraining/config_resolved.yaml",
+      "bytes": 950,
+      "sha256": "a1bc5e8609568d74a9a20c242490c47061fa3b8eb5fc87d7af0ca0c6901e8b1e"
+    },
+    {
+      "path": "results/pretraining/run_manifest.json",
+      "bytes": 760,
+      "sha256": "9014e2aa64425a9a76690562d8d735100619ae4e394705574999d65436250f30"
+    },
+    {
+      "path": "results/pretraining/training_metrics.csv",
+      "bytes": 2952,
+      "sha256": "e557d20c0a942ce0eb3c449b775d7e846a9721329031f1edd033eb07b4e70278"
+    },
+    {
+      "path": "results/retrieval/metrics.csv",
+      "bytes": 1297,
+      "sha256": "0224c772ca556bbd9f501690a2942a5219aad2bfef4fde31df16f601d9a57c5a"
+    },
+    {
+      "path": "results/retrieval/results.json",
+      "bytes": 3855,
+      "sha256": "5516ef62dcc9447167d189f54345249aa5779d0cba49dfb72c053da4e395e193"
+    },
+    {
+      "path": "results/segmentation/geobench_224/m-SA-crop-type/optimization_history.csv",
+      "bytes": 26673,
+      "sha256": "c9439dffcebd2a93c6df55f004d029117f1cc10c453367e61a652057f0dc215c"
+    },
+    {
+      "path": "results/segmentation/geobench_224/m-SA-crop-type/results.json",
+      "bytes": 103119,
+      "sha256": "6efcea668cf8115a19a7f3b425919f412e0e10abd6e2a656d32f8fec5b83ceaa"
+    },
+    {
+      "path": "results/segmentation/geobench_224/m-cashew-plant/optimization_history.csv",
+      "bytes": 27093,
+      "sha256": "ec9e50035a9564fd554b666dc1cb23aac94178adee5c1ed473d70a70749171ed"
+    },
+    {
+      "path": "results/segmentation/geobench_224/m-cashew-plant/results.json",
+      "bytes": 102426,
+      "sha256": "cd2c5812e45d952c898bda27eb45c0b99fda659b4fe0d134d92fe22f6c33302e"
+    },
+    {
+      "path": "results/segmentation/model_input/m-SA-crop-type/optimization_history.csv",
+      "bytes": 26710,
+      "sha256": "74f308afd305175cbfe3b693995e5c254fc9ea81995411472ae5fac43ede94df"
+    },
+    {
+      "path": "results/segmentation/model_input/m-SA-crop-type/results.json",
+      "bytes": 103169,
+      "sha256": "beedc21adccc659d9a55d09fbc2d1750b3fd3268291f06ccf25bdd3e9a0e6a55"
+    },
+    {
+      "path": "results/segmentation/model_input/m-cashew-plant/optimization_history.csv",
+      "bytes": 27142,
+      "sha256": "5fd0baa5f8acf77d00d777d2bfb4bb1e7984e763d4be82053bfcf5310c6e4218"
+    },
+    {
+      "path": "results/segmentation/model_input/m-cashew-plant/results.json",
+      "bytes": 102470,
+      "sha256": "b5dd271bf9a4503e3abf7bc07d80c3d744e254b82dff804ea836335661346573"
+    },
+    {
+      "path": "results/summary.csv",
+      "bytes": 1286,
+      "sha256": "3c6d4212a380f3fc949e33db770af0ce871ae642466fee893ddefecb22434c47"
+    },
+    {
+      "path": "scheduler/__init__.py",
+      "bytes": 62,
+      "sha256": "456af05622e2d0f51541ef6b7bb55a731c219dffa791cdb3720818a53eef2849"
+    },
+    {
+      "path": "scheduler/schedulers.py",
+      "bytes": 1989,
+      "sha256": "e7328070ccf96b83b07fd973b08cd4b1f66e35ca52b4212299acdf5a1e2101c2"
+    },
+    {
+      "path": "scripts/finalize_release.py",
+      "bytes": 14337,
+      "sha256": "52fb855b05ec369578c10b98b9d9a9baadf2e25b88e2dcf03eb6cf18595cd7a2"
+    },
+    {
+      "path": "utils/__init__.py",
+      "bytes": 67,
+      "sha256": "2549b3d0b81e90cb27b18f3cb9b9ddefda1d228ec4c28a9952f20bc5006eaa79"
+    },
+    {
+      "path": "utils/analysis_utils.py",
+      "bytes": 8646,
+      "sha256": "fc3cef2525cf270bc01e7db761e059bca845c593094f96176d21078be8ea275a"
+    },
+    {
+      "path": "utils/classification_finetune.py",
+      "bytes": 3655,
+      "sha256": "65be490f887cb6ad4803278308d9314f2967a662960ae8f23d4e29c86f38f758"
+    },
+    {
+      "path": "utils/extract_embeddings.py",
+      "bytes": 17445,
+      "sha256": "198d80834ef070341f6fcbd87c776e1b382c96bc48d947356c4249ebcaedde86"
+    },
+    {
+      "path": "utils/linear_probe.py",
+      "bytes": 7329,
+      "sha256": "fb9f7ea195b5a229637755902f51b1f4e25045fd16624a258436fe8e2837d4e0"
+    },
+    {
+      "path": "utils/retrieval.py",
+      "bytes": 6267,
+      "sha256": "756f39baad63fbc73420244c69f63031002bbbe573f3b1432874954add5ed04d"
+    },
+    {
+      "path": "utils/segmentation_finetune.py",
+      "bytes": 12321,
+      "sha256": "57a912748738921e8ae8d8f9fde6ff1bb3ca9a55e244cd04e1afe762cf4a3b09"
+    },
+    {
+      "path": "utils/segmentation_probe.py",
+      "bytes": 30658,
+      "sha256": "1a7e2f3cad09bfa93e4a13fb69a4c488d8bdf875a4563b0b1479349d6f884160"
+    },
+    {
+      "path": "weights/README.md",
+      "bytes": 746,
+      "sha256": "a054e75b1c70411d08fa1846945e688ab48c72953e44b8ce1769176fbc936f74"
+    },
+    {
+      "path": "weights/SHA256SUMS",
+      "bytes": 2610,
+      "sha256": "5cdc19c467ad86da027c273a0090ecb4254907875d3ab0202b12d883225f5be4"
+    },
+    {
+      "path": "weights/downstream/classification/geobench_224/m-bigearthnet_best_head.pth",
+      "bytes": 27093,
+      "sha256": "16bd21ef1cda28442f98e2e0593e53c69fb69ed22a4ee59efa24694524d27010"
+    },
+    {
+      "path": "weights/downstream/classification/geobench_224/m-brick-kiln_best_head.pth",
+      "bytes": 3349,
+      "sha256": "658efceeaf1592b46bb5a292f70afcae1dcaff89d9fca04d44ea15662a911450"
+    },
+    {
+      "path": "weights/downstream/classification/geobench_224/m-eurosat_best_head.pth",
+      "bytes": 7957,
+      "sha256": "68ddddbd009deadd0355f0d636e226fcfc2bb5203ad5fde7e352c4be695152fb"
+    },
+    {
+      "path": "weights/downstream/classification/geobench_224/m-so2sat_best_head.pth",
+      "bytes": 12053,
+      "sha256": "46f85cbb2e7194c80827ae157816781159272159473e71dbda27105d67093ea6"
+    },
+    {
+      "path": "weights/downstream/classification/model_input/m-bigearthnet_best_head.pth",
+      "bytes": 27093,
+      "sha256": "eb356845e30ec7ac92cab7131570c25b075d1ff52fe5d1ac760f06263d47b1cc"
+    },
+    {
+      "path": "weights/downstream/classification/model_input/m-brick-kiln_best_head.pth",
+      "bytes": 3349,
+      "sha256": "255c4bca748a495d1df1e1f118d2e4150012f73e12f67743ca593a90d06696f4"
+    },
+    {
+      "path": "weights/downstream/classification/model_input/m-eurosat_best_head.pth",
+      "bytes": 7957,
+      "sha256": "dc47889f666519975b809c5923b1ac44b8021d53b4272ae595a63ccc7aff78b4"
+    },
+    {
+      "path": "weights/downstream/classification/model_input/m-so2sat_best_head.pth",
+      "bytes": 12053,
+      "sha256": "7c7c9904660d7f309550c80b4ee351df247703adda07885bd7c926444f318059"
+    },
+    {
+      "path": "weights/downstream/finetuning/bigearthnet_geobench_224_best.pth",
+      "bytes": 17386737,
+      "sha256": "fb9fc9350c2493c7a749a3ab0aca5cdfa8abeee0600cde29ac675df7f52555d2"
+    },
+    {
+      "path": "weights/downstream/finetuning/bigearthnet_model_input_best.pth",
+      "bytes": 17386737,
+      "sha256": "b8122813f79918a48bceebdd73647001c1ae214c900b30ba655e24c5495d4c9e"
+    },
+    {
+      "path": "weights/downstream/metadata/all_best_head.pth",
+      "bytes": 10709,
+      "sha256": "c566e3ae516cbe75e40c75960526032a272b6a6fc13a017eb45318d7143299cd"
+    },
+    {
+      "path": "weights/downstream/metadata/no_era5_best_head.pth",
+      "bytes": 10709,
+      "sha256": "1e6d11cdc6031aeb78d11f8d00bfae7cd961c37be15f1cb480d316bc4ecaff8e"
+    },
+    {
+      "path": "weights/downstream/metadata/no_location_best_head.pth",
+      "bytes": 10709,
+      "sha256": "be768470e324bb8fedb6ab0e2d5245b7b501f13f6e7ffc9a48ae9cdbab13321f"
+    },
+    {
+      "path": "weights/downstream/metadata/no_month_best_head.pth",
+      "bytes": 10709,
+      "sha256": "d1d797e691a4acea1c16a69bf5acb4d3a3d609d4f6db215a3d047afece54b988"
+    },
+    {
+      "path": "weights/downstream/metadata/none_best_head.pth",
+      "bytes": 10645,
+      "sha256": "88769241f8a1d482458099b343088b09a0c3b753bc36a46c20928694e24812b1"
+    },
+    {
+      "path": "weights/downstream/segmentation/geobench_224/m-SA-crop-type_best_head.pth",
+      "bytes": 28589318,
+      "sha256": "171d6bdae00f9d055423603f8cb15a99479d1dc69ddd68c1ad82fd67099164d8"
+    },
+    {
+      "path": "weights/downstream/segmentation/geobench_224/m-cashew-plant_best_head.pth",
+      "bytes": 28586246,
+      "sha256": "4864eda70d0ae589f44b6b9bb0db8ab633b4ca6a4eea649395bbba1324e187dd"
+    },
+    {
+      "path": "weights/downstream/segmentation/model_input/m-SA-crop-type_best_head.pth",
+      "bytes": 28589318,
+      "sha256": "ee79e029648717ad6f3258dd03743f8650791c50e1a6a410ca5662b4bfff57d9"
+    },
+    {
+      "path": "weights/downstream/segmentation/model_input/m-cashew-plant_best_head.pth",
+      "bytes": 28586246,
+      "sha256": "3985641dcba4a1c3740a7b1ce4cd491753891031021d4f49381d144ea37f8561"
+    },
+    {
+      "path": "weights/manifest.json",
+      "bytes": 4050,
+      "sha256": "5338a12eeef6ee85d7b6df90d7e636fdec501364feb062f1d2cbfca62825cf56"
+    },
+    {
+      "path": "weights/pretrained/meox_s_mmearth64_best.pth",
+      "bytes": 38350435,
+      "sha256": "932111c3f8be4e4dc4f5c111b1c4570947ecbc46b7aaa51458fc5497232e527c"
+    }
+  ]
+}

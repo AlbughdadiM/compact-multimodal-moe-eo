@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-12T13:20:48.792530+00:00",
+  "launches": [
+    {
+      "started_at": "2026-08-12T13:20:48.792530+00:00",
+      "command": "python",
+      "resume_requested": false,
+      "start_epoch": 0
+    }
+  ],
+  "updated_at": "2026-08-12T13:20:48.792530+00:00",
+  "git_commit": "3d07ecb3f0d6d0672558753b9bbe8b8ccb5aa211",
+  "config_file": "config_resolved.yaml",
+  "optimizer_layout": "adamw_selective_weight_decay_v3_dense_decoder",
+  "model_parameters": 3114993,
+  "trainable_parameters": 3114993,
+  "torch_version": "2.7.0+cu126",
+  "cuda_version": "12.6",
+  "device": "cuda",
+  "gpu_name": "GRID A100D-2-20C MIG 2g.20gb",
+  "seed": 42,
+  "validation_mask_seed": 44,
+  "total_steps": 479750,
+  "warmup_steps": 23987
+}
