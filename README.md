@@ -221,5 +221,5 @@ objects are retained below their corresponding experiment directories.
 - The checkpoint was pretrained on MMEarth64 imagery. Users must preserve correct
   band ordering, normalization, units, nodata masks, and acquisition semantics.
 
-See `MODEL_CARD.md`, `docs/NOTES.md`, and `docs/manuscript.pdf` for additional
+See `MODEL_CARD.md`, `docs/NOTES.md` for additional
 details. Code and distributed weights use the MIT license.
