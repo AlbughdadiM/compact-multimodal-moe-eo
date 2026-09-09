@@ -223,3 +223,18 @@ objects are retained below their corresponding experiment directories.
 
 See `MODEL_CARD.md`, `docs/NOTES.md` for additional
 details. Code and distributed weights use the MIT license.
+
+The preprint is available at <https://arxiv.org/abs/2609.05351>.
+To cite the preprint, please use the following BibTeX entry:
+
+```bibtex
+@misc{albughdadi2026meoxcompactmultimodalmixtureofexperts,
+      title={MEOX: Compact Multimodal Mixture-of-Experts for Earth Observation}, 
+      author={Mohanad Albughdadi},
+      year={2026},
+      eprint={2609.05351},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2609.05351}, 
+}
+```
